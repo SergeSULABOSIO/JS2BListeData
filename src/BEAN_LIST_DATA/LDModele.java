@@ -420,6 +420,11 @@ public abstract class LDModele extends AbstractTableModel {
                 public void initPropAEviter(Vector<Propriete> vector) {
                     iniDetailsAEviter(vector);
                 }
+
+                @Override
+                public void initPropSpeciaux(Vector<Propriete> vector) {
+                    
+                }
             };
         }
     }
