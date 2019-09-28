@@ -5,9 +5,9 @@
  */
 package BEAN_LIST_DATA;
 
-import SOURCES.Constante;
+import SOURCES.ConstanteViewer;
 import SOURCES.DetailViewer;
-import SOURCES.Propriete;
+import SOURCES.ProprieteViewer;
 import Sources.CHAMP_LOCAL;
 import Sources.Ecouteurs.ProprieteAdapter;
 import Sources.Ecouteurs.ProprieteEvent;
@@ -412,26 +412,26 @@ public abstract class LDModele extends AbstractTableModel {
         if (scrollDetails != null && tabDetails != null) {
             detailViewer = new DetailViewer(icone, modelName, getSelectedObject(), scrollDetails, tabDetails, 12) {
                 @Override
-                public void initPropConstantes(Vector<Constante> vector) {
+                public void initPropConstantes(Vector<ConstanteViewer> vector) {
                     iniDetailsConstantes(vector);
                 }
                 
                 @Override
-                public void initPropAEviter(Vector<Propriete> vector) {
+                public void initPropAEviter(Vector<ProprieteViewer> vector) {
                     iniDetailsAEviter(vector);
                 }
 
                 @Override
-                public void initPropSpeciaux(Vector<Propriete> vector) {
+                public void initPropSpeciaux(Vector<ProprieteViewer> vector) {
                     
                 }
             };
         }
     }
     
-    public abstract void iniDetailsConstantes(Vector<Constante> vector);
+    public abstract void iniDetailsConstantes(Vector<ConstanteViewer> vector);
     
-    public abstract void iniDetailsAEviter(Vector<Propriete> vector);
+    public abstract void iniDetailsAEviter(Vector<ProprieteViewer> vector);
 
     private void actualiserGestionnairePages(int nbElementTotal) {
         int nbPagesTotale = 1;

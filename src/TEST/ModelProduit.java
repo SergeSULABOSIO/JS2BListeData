@@ -6,8 +6,8 @@
 package TEST;
 
 import BEAN_LIST_DATA.LDModele;
-import SOURCES.Constante;
-import SOURCES.Propriete;
+import SOURCES.ConstanteViewer;
+import SOURCES.ProprieteViewer;
 import Sources.CHAMP_LOCAL;
 import Sources.Ecouteurs.ProprieteEvent;
 import Sources.PROPRIETE;
@@ -125,12 +125,12 @@ public class ModelProduit extends LDModele {
     }
 
     @Override
-    public void iniDetailsConstantes(Vector<Constante> vector) {
+    public void iniDetailsConstantes(Vector<ConstanteViewer> vector) {
         
     }
 
     @Override
-    public void iniDetailsAEviter(Vector<Propriete> vector) {
+    public void iniDetailsAEviter(Vector<ProprieteViewer> vector) {
         
     }
 
