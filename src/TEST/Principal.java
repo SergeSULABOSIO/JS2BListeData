@@ -34,6 +34,7 @@ public class Principal extends javax.swing.JFrame {
     }
 
     public void construireListe() {
+        //RAS un très petit test
         table = new LDTable(scrollListe, new LDListener() {
             @Override
             public void OnActualiseBarreOutilsEtMenuContextuel(LDModele model) {
